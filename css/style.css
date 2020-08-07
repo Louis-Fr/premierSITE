@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* reset simple  */
+/* l'étoile signifie, tout, "all" */
+/* tous les éléments sont "taillés" de façon plus intuitive. Ils conserveront la taille que nous leur donnons. */
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* mes styles pour le premierSITE : Patrick Isola - Colombbus */
+/* font-family: 'Anton', sans-serif;
+font-family: 'Lemonada', cursive;
+font-family: 'Oswald', sans-serif; */
+body {
+	background-image: url('../img/concrete-texture.png');
+	font-family: 'Oswald', sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+/* styles pour les titres du site */
+h1 {
+	font-size: 45px;
+	color: #2980b9;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: 'Anton', sans-serif;
+}
+h2 {
+	font-size: 35px;
+	color: #2c3e50;
+	padding: 20px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #aaa;
+}
+h2 i {
+	color: #09c;
+    font-size: 150%;
+}
+h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    padding: 15px;
+    text-shadow: 1px 1px 2px #aaa;
+}
+h4 {
+    text-align: center;
+    margin-top: 30px;
+}
+strong {
+	font-weight: bold;
+}
+/* à compléter  */
+/* style pour header */
+header {
+    height: 175px;
+    background: #2c3e50;
+}
+#logo {
+	float: left;
+	width: 25%;
+    background: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+#slogan {
+    float: left;
+    width: 50%;
+    background: #2c3e50;
+    padding-top: 50px;
+}
+/* style pour header : les styles pour les icônes d'insta et de fesse bouc  */
+#social {
+	float: left;
+	width: 25%;
+}
+#social i {
+	background: #2c3e50;
+    font-size: 30px;
+    text-align: right;
+    padding: 15px 30px 0 0;
+}
+header a {
+	text-decoration: none;
+	color: #10828c;
+}
+/* fin header  */
+/* nav navigation */
+
+nav {
+    background: #2980b9;
+    height: 70px;
+    border-bottom: 8px solid #6acafc;
+    text-align: center;
+    padding: 15px;
+}
+nav a {
+    background: #6acafc;
+    margin: 10px;
+    padding: 2px 10px;
+    border-radius: 10px 0;
+    border: 2px solid #fff;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+	/* contrôle le durée en secondes ou en milli-secondes de la transition avec la pseudo class .hover  */
+    transition: 0.5s; /* transition sur le a marche avec le :hover */
+}
+nav a:hover {
+    color: #fff;
+    background: #a6d6c3; 
+}
+.active {
+	color: orangered;
+    background: #a6d6c3;
+}
+
+/* fin nav */
+
+/* les zones principales de la page et du site */
+main {
+	background: rgba(178, 178, 178, 0.178);
+	width: 1200px;
+	margin: 0 auto;
+}
+
+aside {
+	height: 250px;
+	background: #a6d6c3;
+	width: 30%;
+	float: left;
+}
+
+#accueil {
+	float: right; 
+	width: 70%;
+    /* padding: 10px;  */
+}
+
+section {
+	margin-top: 10px;
+	padding: 20px;
+}
+
+footer {
+	height: 30px;
+	background: #2980b9;
+	margin-top: 10px;
+}
+
+/* fin des zones principales */
+
+/* le bouton pour aller en haut de page */
+
+button {
+	font-size: 350%;
+	background-color: transparent;
+	color: none;
+	border: #2c3e50;
+	/* la position du bouton */
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+}	
+
+/* fin bouton */
+
+/* style de la page texte */
+
+.citation {
+	font: 20px, lemonada, cursive;
+}
+
+h2 i {
+	color: #2980b9;
+	font-size: 200%;
+}
+
+blockquote i {
+	color: #6acafc;
+	font-size: 350%;
+	vertical-align: top;			
+}
+
+.imageFond {
+	background: url(../img/fond.jpg) no-repeat;	 
+	background-size: cover;
+}
+
+.imageFond p {
+	/* l'image apparaît car le p à une marge intérieur (margin) importante */
+	width: 75%;
+	margin: 200px auto 250px auto;
+	padding: 20px;
+	background: rgba(255,255,255,0.68);
+	border-radius: 10px;
+	font-size: 120%;
+}
+
+.auCentre {
+	text-align: center;
+}
+
+img[src="img/toureiffel.jpg"] {
+	margin: auto;
+	display: block;
+	padding: 30px;
+	background: #fff;
+}
+
+.imageGolden {
+	margin: 20px;
+	border: 5px solid #fff;
+	box-shadow: ;
+	/* transition qui fonctionnera avec le :hover et transform */
+	transition: 1s;
+}
+
+/* effet d'animation */
+
+.imageGolden:hover {
+	transform: rotate(-7deg);
+	border: 15px solid #fff;
+}
+
+.rotation360:hover {
+	/* transition: 2s; */
+	transform: rotate(-360deg);
+}
+
+/* fin des images */
+
+#zoning1 {
+    background: #333;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 1px 1px 2px white;
+}
+
+#zoning1 header {
+    height: 70px;
+    background-color: #f7f39a;
+}
+
+#zoning1 aside {
+	height: 520px;
+	width: 20%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+#zoning1 section {
+	height: 520px;
+	width: 80%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+

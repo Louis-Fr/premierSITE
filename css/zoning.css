@@ -1,0 +1,27 @@
+body {
+    background-color: lightpink;
+}
+
+#entete {
+    background-color: yellow;
+    width: 1200px;
+    height: 150px;
+}
+
+#entete p {
+    text-align: center;
+    padding: 50px;
+}
+
+#principal {
+    background-color: lightslategray;
+    width: 1000px;
+    height: 400px;
+    text-align: center;
+}
+
+#secondaire {
+    background-color: greenyellow;
+    height: 20px;
+    width: 200px;
+}
