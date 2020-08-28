@@ -1,0 +1,49 @@
+body {
+    background-color: bisque;
+}
+
+.clear {
+    clear: both;
+}
+/* flux */
+
+.carre1, .carre2, .carre3, .carre4 {
+    background: pink;
+    height: 10em;
+    width: 10em;
+    border-radius: 2px 2px 15px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    float: left;
+}
+
+.carre5, .carre6, .carre7, .carre8 {
+    background: pink;
+    height: 10em;
+    width: 10em;
+    border-radius: 2px 2px 15px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    float: left;
+} 
+
+.carre9, .carre10, .carre11, .carre12, {
+    background: pink;
+    height: 10em;
+    width: 10em;
+    border-radius: 2px 2px 15px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    float: left;
+}
+
+.carre13, .carre14, .carre15, .carre16 {
+    background: pink;
+    height: 10em;
+    width: 10em;
+    border-radius: 2px 2px 15px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    float: left;
+}
+

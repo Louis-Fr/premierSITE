@@ -1,0 +1,80 @@
+body {
+    background-color: wheat;
+}
+
+clear {
+    clear: both;
+}
+
+#zoning6 {
+    width: 1000px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#zoning6 header {
+    color: white;
+}
+
+#zoning6 #haut1 {
+    height: 100px;
+    width: 25%;
+    background-color: red;
+    float: left;
+}
+
+#zoning6 #haut2 {
+    height: 100px;
+    width: 50%;
+    background-color: green;
+    float: left;
+    
+}
+
+#zoning6 #haut3 {
+    height: 100px;
+    width: 25%;
+    background-color: lightcyan;
+    float: left;
+    
+}
+
+#zoning6 #menu {
+    height: 20px;
+    width: 100%;
+    background: turquoise;
+    float: left;
+}
+
+#zoning6 #aside {
+    height: 500px;
+    background-color: violet;
+    width: 20%;
+    float: left;
+    
+}
+
+#zoning6 #section {
+    float: left;
+}
+
+#zoning6 #diaporama {
+    background-color: lightgreen;
+    width: 100%;
+    float: left;
+}
+
+#zoning6 #zonea {
+    background-color: beige;
+    height: 120px;
+    width: 50%;
+    float: left;
+}
+
+#zoning6 #zoneb {
+    background-color: #ffffff;
+    height: 120px;
+    width: 50%;
+}
+

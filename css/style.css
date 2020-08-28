@@ -163,9 +163,10 @@ section {
 }
 
 footer {
-	height: 30px;
+	/* height: 30px; */
 	background: #2980b9;
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 /* fin des zones principales */
@@ -281,6 +282,145 @@ img[src="img/toureiffel.jpg"] {
 
 /* zoning 2 */
 
+#zoning2 {
+	background-color: #ffd6d6;
+	width: 800px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+#zoning2 header {
+	background-color: purple;
+	height: 70px;
+}
+
+#zoning2 aside {
+	height: 500px;
+	width: 25%;
+	float: left;
+	color: cadetblue;
+	color: red;
+}
+
+#zoning2 .milieu {
+	width: 50%;
+	margin: 0;
+	background-color: cyan;
+	height: 500px;
+	float: left;
+}
+
+/* zoning 3 */
+
+#zoning3 {
+	background-color: rosybrown;
+	width: 800px;
+	margin: auto;
+	text-align: center;
+}
+
+#zoning3 section {
+	background-color: pink;
+	height: 500px;
+	width: 50%;
+	float: left;
+	margin: auto;
+	color: #fff;
+}
+
+#zoning3 .vert {
+	background-color: green;
+}
+
+#zoning3 footer {
+	height: 70px;
+	float: left;
+	width: 100%;
+	background-attachment: #d8ebb5;
+	margin: 0;
+}
+
+/* fin du zoning 3 */
+
+#zoning4 {
+    width: 1200px;
+    background-color: lightgreen;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+#zoning4 header {
+    /* width: 1200px; */
+    min-height: 100px;
+    background-color: red;
+}
+#zoning4 nav {
+    background-color: blue;
+    min-height: 50px;
+}
+#zoning4 nav p {
+	margin: 0;
+	border: none;
+}
+#zoning4 section {
+    background-color: purple;
+    height: 500px;
+    margin: 20px;
+}
+#zoning4 footer {
+    background-color: black;
+    height: 50px;
+}
+
+/* fin du zoning 4 */
+
+/* zoning 5 */
+
+#zoning5 {
+    width: 1000px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+    /* auto centré */
+    text-align: center;
+}
+
+#zoning5 header {
+	height: 100px;
+	background: #be32ff;
+}
+
+#zoning5 nav {
+	height: 50px;
+	background: rgb(124, 107, 187);
+	border-bottom: 8px solid #333;
+}
+
+#zoning5 section {
+	background: #176d81;
+	margin: 20px;
+	padding: 0;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 {
+	height: 250px;
+	width: 50%;
+	float: left;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 p {
+	/* line-height = la hauteur de l'élement si il ya un paragraphe court, qui tient sur une seule ligne */
+	line-height: 250px;
+}
+
+#zoning5 .z1, .z4 {
+	background: #32ff32;
+} 
+
+#zoning5 .z2, .z3 {
+	background: ;
+}
+
 /* a terminer */
 
 /* page position */
@@ -288,7 +428,7 @@ img[src="img/toureiffel.jpg"] {
 .centre {
 	height: 200px;
 	width: 200px;
-	background-color: #6acafc;
+	background-color: red;
 	margin: 0 auto;
 }
 
@@ -307,8 +447,8 @@ img[src="img/toureiffel.jpg"] {
 
 .relative {
 	background-color: darkblue;
-	height: 250px;
-	width: 250px;
+	height: 100px;
+	width: 100px;
 	margin: 0 auto;
 	position: relative;
 	/* position relative par rapport a la section dans laquelle se trouve cette div, relative par rapport à son parent*/
@@ -327,3 +467,181 @@ img[src="img/toureiffel.jpg"] {
 	right: 0px;
 	top: 0px;
 }
+
+/* pourcentage */
+
+.trente {
+	width: 30%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: red;
+	color: powderblue;
+}
+
+.cinquante {
+	font-size: 22px;
+	width: 50%;
+	background: orangered;
+	padding: 20px;
+	color: #fff;
+}
+
+.cent {
+	font-size: 22px;
+	width: 100%;
+	background: pink;
+	padding: 20px;
+	color: green;
+}
+
+/* float */
+
+.float {
+	width: 170px;
+	height: 170px;
+	background-color: yellow;
+	border: 2px solid darkred;
+	margin: 10px;
+	float: left;
+
+	text-align: center;
+	font-size: 22px;
+}
+
+.dernier {
+	height: 170px;
+	width: 170px;
+	background-color: yellow;
+	margin: 10px;
+	font-size: 22px;
+	text-align: center;
+	padding-top: 60px;
+	border: 2px solid darkred;
+}
+
+/* exemple sur le float */
+
+.zone {
+	height: 70px;
+	background-color: #333;
+}
+
+.zone1, .zone2, .zone3, .zone4 {
+	height: 250px;
+	width: 25%;
+	float: left;
+}
+
+.zone1 {
+	background: #2d5c7f;
+}
+
+.zone2 {
+	background: #FFF1A8;
+}
+
+.zone3 {
+	background: #FF8F56;
+}
+
+.zone4 {
+	background: #984a59;
+}
+
+/* flexbox */
+
+/* page des liens */
+
+.ancre {
+	text-align: center;
+	padding: 100px;
+}
+
+.ancre a {
+	margin: 8px;
+	padding: 5px 10px;
+	background: lightgray;
+	box-shadow: 0px 0px 10px 3px rgb(151, 151, 151);
+	border-radius: 15px;
+
+	color: #fff;
+	text-decoration: none;
+}
+
+.ancre a:hover {
+	box-shadow: none;
+	transition: 0.5s;
+	text-shadow: 1px 5px 10px gray;
+}
+
+#menu nav {
+	background: transparent;
+	border: none;
+}
+
+#menu ul {
+	list-style: none;
+	text-align: center;
+}
+
+#menu ul li {
+	display: inline-block;
+	/* element inline ou block a reviser */
+}
+
+#menu nav a {
+	padding: 10px;
+	color: grey;
+	text-decoration: none;
+	background: #ddd;
+	/*  */
+	transition: 1s ease-ins;
+}
+
+#menu nav a:hover {
+	color: #fff;
+	background: #069;
+}
+
+/* le menu avec les menus déroulants */
+
+#menuDeroulant nav {
+	width: 90%;
+	background: transparent;
+	border: none;
+	margin: 0 auto;
+}
+
+#menuDeroulant nav ul li {
+	list-style: none;
+	width: 20%;
+	float: left;
+}
+
+#menuDeroulant ul ul {
+	display: none;
+}
+
+#menuDeroulant nav ul li ul li {
+	border-top: 1px solid #464646;
+	width: 100%;
+}
+
+#menuDeroulant nav li {
+	background: #ccc;
+}
+
+#menuDeroulant nav li a {
+	display: block;
+	padding: 4px 0;
+	/* display block */
+}
+
+#menuDeroulant ul {
+	text-align: center;
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2 {
+	display: block;
+}
+

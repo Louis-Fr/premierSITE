@@ -1,0 +1,32 @@
+body {
+    background-color: bisque;
+}
+
+.clear {
+    clear: both;
+}
+
+#texte {
+    background-color: skyblue;
+}
+
+#footer {
+    float: left;
+    background-color: skyblue;
+}
+
+#imgchat {
+    border: 2px solid pink;
+}
+
+
+.chat1, .chat2, .chat3, .chat4, .chat5, .chat6, .chat7, .chat8 {
+    border: 5px solid violet;
+    float: left;
+    margin
+}
+
+.chat5, .chat6, .chat7, .chat8 {
+    
+}
+

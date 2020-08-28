@@ -1,0 +1,38 @@
+body {
+    background-image: url(../img/concrete-texture.png) ;
+}
+
+/* Zoning 4 */
+
+#zoning4 {
+    width: 800px;
+    background-color: green;
+	text-align: center;
+    margin: auto;
+    color: #fff;
+}
+
+#zoning4 header {
+	background-color: greenyellow;
+	height: 100px;
+}
+
+#zoning4 nav {
+    min-height: 50px;
+    background-color: royalblue;
+}
+
+#zoning4 header p {
+    
+}
+
+#zoning4 section {
+	height: 500px;
+    background-color: pink;
+    margin: 20px;
+}
+
+#zoning4 footer {
+    height: 75px;
+    background-color: bisque;
+}
