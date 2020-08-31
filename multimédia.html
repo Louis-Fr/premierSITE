@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mon premier site - Colombbus">
+    <meta name="keywords" content="html, css, Louis Rey, Colombbus, Suresnes, 2020">
+    <meta name="author" content="Louis Rey"> 
+    <!-- feuille de style du premier site -->
+    <title>premierSITE - Multimédia</title>
+    <!-- les icônes depuis FontAwesome -->
+    <script src="https://kit.fontawesome.com/d0f933ad89.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../premierSITE/css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#logo">
+                <!-- test Github 2 -->
+            </a>
+            <button type="button"><i class="fas fa-arrow-alt-circle-up"></i></button>
+            <img src="img/logo.png" alt="logo premier site">
+            <!-- fin #logo -->
+        </div>
+        <div id="slogan">
+            <a href="index.html" title="mon premier site en html css"></a> <h1>Mon premier site en html5 et css3</h1>
+            <!-- fin #slogan -->
+            
+        </div>
+        <div id="social">
+            <a href="https://www.instagram.com/?hl=fr" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://fr-fr.facebook.com/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <!-- fin #social -->
+        </div>
+        <div class="clear"></div>
+       
+    </header>
+    
+    <nav>
+        <div class="ancreNav">
+            <a href="index.html" title="Accueil" >Accueil</a>
+            <a href="texte.html" title="texte">texte</a>
+            <a href="selecteur.html" title="selecteur">selecteur</a>
+            <a href="image.html" title="image">Image</a>
+            <a href="position.html" title="position">Position</a>
+            <a href="zoning.html" title="zoning">zoning</a>
+            <a href="tableau" title="tableau">Tableau</a>
+            <a href="liste.html" title="liste">liste</a>
+            <a href="liens.html" title="liens">Liens</a>
+            <a href="formulaire.html" title="formulaire">Formulaire</a>
+            <a href="multimédia.html" title="multimédia" class="active">multimédia</a>
+            <a href="animation.html" title="animation">animation</a>
+            <a href="recap.html" title="recap">recap</a>
+        </div>
+            <!-- plusieurs liens -->
+    </nav>
+
+    <!-- contenu principal -->
+    <main>  
+        <h2>Multimédia  <i class="fas fa-film"></i></h2>
+
+        <section class="videoFond">
+            <h3>Une vidéo en fond</h3>
+            <div class="videoTexte">
+<!-- l'attribut muted dans <vidéo> débloque la vidéo mais muet -->
+                <video autoplay loop controls
+                src="video/videoBackground.mp4" type="video/mp4">
+                </video>
+<!-- par défault le navigateur va bloquer les contenus audio et vidéo -->
+<!-- il faut insérer la barre de controle (lecture,pause) -->
+            <p>Une video en noir et blanc</p> 
+            </div>
+            </section>
+            
+            <section>
+            <h3>Intégration depuis YT</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ndEZVLOost0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+
+                <section class="audio">
+                    <h3>Audios, les sons</h3>
+                    <h4>Format mp3</h4>
+                    <br>
+                    <audio src="audio/sf_ambi_oiseaux_campagne_01.mp3" controls></audio>
+
+                    <h4>format ogg</h4>
+                    <audio src="audio/son.ogg" controls></audio>
+                    <p>Votre navigateur ne prend pas en charge l'audio html</p>
+                    <br>
+                    <audio src="audio/sf_ambi_oiseaux_campagne_01.mp3" controls autoplay></audio>
+
+                    <hr>
+
+                    <audio controls>
+                        <source src="audio/son.ogg" type="audio/ogg">
+                        <source src="audio/son.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                </section>
+
+
+                    
+                
+
+       
+    </main>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quidem labore voluptates quibusdam dicta iste natus esse facilis eligendi expedita fugit laboriosam sequi rem quis, ipsum cum quaerat obcaecati facere!
+        </p>
+    </footer>
+</body>
+</html>
+
+
+

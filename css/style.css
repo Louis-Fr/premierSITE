@@ -421,6 +421,138 @@ img[src="img/toureiffel.jpg"] {
 	background: ;
 }
 
+/* fin du zoning 5 */
+
+/* zoning 6 */
+
+#zoning6 {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: pink;
+}
+
+#zoning6 header {
+    height: 200px;
+    
+}
+
+.clear {
+    clear: both;
+}
+
+.haut1 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: tomato;
+}
+
+.haut2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: teal;
+}
+
+.haut3 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: turquoise;
+}
+
+/* .bg-tomato {
+    background: tomato;
+} */
+
+#zoning6 nav {
+    height: 50px;
+	background-color: lightblue;
+	border: none;
+}
+
+#zoning6 nav a {
+	border: none;
+	background: none;
+	background-color: lightblue;
+}
+
+#zoning6 aside {
+    width: 25%;
+    height: 500px;
+    float: left;
+    background-color: black;
+}
+
+#zoning6 section {
+    width: 75%;
+    float: left;
+	background-color: lightgreen;
+	padding: 0;
+	margin: 0;
+}
+
+#zoning6 .a {
+    height: 200px;
+    width: 50%;
+    float: left;
+    background-color: wheat;
+}
+
+#zoning6 .b {
+    height: 200px;
+    width: 50%;
+    float: left;
+    background-color: black;
+}
+
+#zoning6 .diaporama {
+    height: 200px;
+    background-color: khaki;
+}
+
+#zoning6 .c {
+    width: 25%;
+    height: 100px;
+    float: left;
+
+    background-color: lime;
+}
+
+#zoning6 .d {
+    width: 25%;
+    height: 100px;
+    float: left;
+
+    background-color: powderblue;
+}
+
+#zoning6 .e {
+    width: 25%;
+    height: 100px;
+    float: left;
+
+    background-color: orchid;
+}
+
+#zoning6 .f {
+    width: 25%;
+    height: 100px;
+    float: left;
+
+    background-color: rosybrown;
+}
+
+#zoning6 footer {
+    min-height: 100px;
+	background-color: #333s;
+	margin: 0;
+}
+
+/* fin du zoning 6 */
+
 /* a terminer */
 
 /* page position */
@@ -645,3 +777,150 @@ img[src="img/toureiffel.jpg"] {
 	display: block;
 }
 
+/* la page des animations */
+
+/* camel case différencié */
+
+.infobulle {
+	height: 250px;
+	width: 500px;
+	background: #444444;
+	margin: auto;
+	padding-top: 15px;
+	box-shadow: 0 0 50px #222 inset;
+}
+
+.infobulle p {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.infobulle a {
+	color: #ccc;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 5px 15px;
+	text-shadow: 0 -0.2px 0 black ;
+}
+
+.infobulle a:hover {
+	color: white;
+	background: rgb(0, 0, 0, 0.4);
+	text-shadow: 0 1px 2px black;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.68) ;
+}
+
+.infobulle a span {
+position: absolute;
+padding: 15px;
+margin-top: 50px;
+margin-left: -23px;
+border-radius: 13px;
+background: rgba(255,255,255,0.68)
+/* le contenu de span disparait grâce a cette ligne */
+opacity: 0;
+color: #09c;
+transition: 0.25s;
+transform: scale(0) rotateZ(-12deg);
+}
+
+.infobulle a:hover span {
+opacity: 1;
+transform: scale(1) rotate(0);
+}
+
+.imgEffets {
+	width: 302px;
+	height: 320px;
+	margin: 70px auto;
+}
+
+.imgEffets li {
+	 width: 141px;
+	 /* on fabrique le carré qui contient les images */
+	 height: 150px;
+	 margin: 5px;
+	 float: left;
+	 list-style: none;
+}
+
+/* le 3e li est clear:both */
+.imgEffets li:nth-child(3) {
+	clear: both;
+}
+
+.imgEffets img {
+	/* contrôle la position des élements, pour modifier leur chevauchement */
+	position: absolute;
+	/* toutes les images sont empilés en bas */
+	z-index: 1;
+	/* on cale l'image dans un bloc carré de 150px */
+	height: 150px;
+
+	box-shadow: 0 0 3px black;
+	/* cubic-bezier commence par 0 et finit par 1, mettre ses valeurs entre  */
+	transition: .5s cubic-bezier(0,3.4,1);
+	/* pour la transition il faut le a:hover */
+}
+
+.imgEffets li:hover img {
+	z-index: 2;
+
+	transform: scale(1.5px);
+
+	box-shadow: 0 0 10px black;
+}
+
+.imgEffets:hover li:not(:hover) img {
+	/* on passe les li qui ne sont pas survolés en gris avec un effet de flou */
+	filter: grayscale(1) blur(1px);
+}
+
+
+/* la page multimédia */
+
+.videoFond {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.videoFond video {
+	width: 80%;
+	position: absolute;
+	z-index: 1;
+}
+
+.videoTexte {
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+.videoFond p {
+	position: relative;
+	z-index: 2;
+	width: 500px;
+	margin: auto;
+	background: rgba(255,255,255,0.68);
+	left: 250px;
+	top: 150px;
+	padding: 20px;
+	font-size: 120%;
+	border-radius: 15px;
+	text-align: center;
+}
+
+/* pour la vidéo youtube embarqué */
+
+iframe[src="https://www.youtube.com/embed/ndEZVLOost0"] {
+	width: 100%;
+	min-height: 800px;
+}
+
+iframe [allowfullscreen] {
+	width: 90%;
+}
+
+.audio {
+	text-align: center;
+}
