@@ -1,0 +1,106 @@
+.row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.container {
+    back
+    width: 80%;
+}
+
+.col-1 {
+    width: 8.333333%;
+    padding: 0 4px;
+}
+
+.col-2 {
+    width: 16.666666%;
+    padding: 0 4px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0 4px;
+}
+
+.col-4 {
+    width: 33.333333%;
+    padding: 0 4px;
+}
+
+.col-5 {
+    width: 41.666666%;
+    padding: 0 4px;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 0 4px;
+}
+
+.col-7 {
+    width: 58.333333%;
+    padding: 0 4px;
+}
+
+.col-8 {
+    width: 66.666666%;
+    padding: 0 4px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 0 4px;
+}
+
+.col-10 {
+    width: 83.333333%;
+    padding: 0 4px;
+}
+
+.col-11 {
+    width: 91.666666%;
+    padding: 0 4px;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 0 4px;
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}

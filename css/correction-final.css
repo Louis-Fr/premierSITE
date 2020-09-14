@@ -1,0 +1,117 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* font-family: 'Cormorant Garamond', serif; */
+body {
+    background-color: oldlace;
+    font-family: 'Cormorant Garamond', serif;
+}
+#conteneur {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+header {
+    margin: 0 auto;
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    text-align: center;
+}
+footer {
+    height: 270px;
+    background-color: white;
+    text-align: center;
+}
+/* les sous-section dans les div contenues dans les  section principales */
+.sous_section {
+    width: 500px;
+    height: 500px;
+    float: left;
+    background-color: white;
+    padding-top: 170px;
+    box-sizing: border-box;
+}
+/* La classe pour rétablir le flux */
+.clear {
+    clear: both;
+}
+/* Les classes pour les images en background url  */
+.assiette {
+    background: url(../img/assiette.jpg) no-repeat;
+    /* centré horizontalement et verticalement dans le parent */
+    object-position: 50% 50%;
+}
+.resto_01 {
+    /* si l'image est plus grande que le parent  */
+    /* background-image: url(../img/resto_01.jpg);
+    background-position: center;
+    background-size: cover; */
+    /* sinon */
+    background: url(../img/resto_01.jpg) no-repeat;
+    object-position: 50% 50%;
+}
+.resto_02 {
+    background: url(../img/resto_02.jpg) no-repeat;
+    object-position: 50% 50%;
+}
+.resto_03 {
+    background: url(../img/resto_03.jpg) no-repeat;
+    object-position: 50% 50%;
+}
+.resto_04 {
+    background: url(../img/resto_04.jpg) no-repeat;
+    object-position: 50% 50%;
+}
+coche_blanche
+yeux
+alléluia
+
+
+
+
+

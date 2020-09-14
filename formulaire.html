@@ -7,7 +7,7 @@
     <meta name="keywords" content="html, css, Louis Rey, Colombbus, Suresnes, 2020">
     <meta name="author" content="Louis Rey"> 
     <!-- feuille de style du premier site -->
-    <title>premierSITE - Tableau</title>
+    <title>premierSITE - Formulaire</title>
     <!-- les icônes depuis FontAwesome -->
     <script src="https://kit.fontawesome.com/d0f933ad89.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../premierSITE/css/style.css">
@@ -49,10 +49,10 @@
             <a href="image.html" title="image">Image</a>
             <a href="position.html" title="position">Position</a>
             <a href="zoning.html" title="zoning">zoning</a>
-            <a href="tableau" title="tableau" class="active">Tableau</a>
+            <a href="tableau" title="tableau">Tableau</a>
             <a href="liste.html" title="liste">liste</a>
-            <a href="lien_menu.html" title="liens">Liens</a>
-            <a href="formulaire.html" title="formulaire">Formulaire</a>
+            <a href="liens.html" title="liens">Liens</a>
+            <a href="formulaire.html" title="formulaire" class="active">Formulaire</a>
             <a href="multimédia.html" title="multimédia">multimédia</a>
             <a href="animation.html" title="animation">animation</a>
             <a href="recap.html" title="recap">recap</a>
@@ -62,36 +62,59 @@
 
     <!-- contenu principal -->
     <main>  
-        <section>
-            <h2>Un tableau - <i class="fas fa-table"></i></h2>
-            <table>
-                <caption>Vol Paris /// Rome -></caption>
-                <thead>
-                    <tr>
-                        <td>Dates</td>
-                        <td>01/09/20</td>
-                        <td>01/09/20</td>
-                        <td>01/09/20</td>
-                    </tr>
-                </thead>
 
-                <tbody>
-                    <tr>
-                        <td rowspan="2">AirFrance</td>
-                        <td>Départ 15h - Arrivée 17h00</td>
-                        <td>Départ 12 h 00 - Arrivée 14h</td>
-                        <td>Départ 23h - Arrivée 12h</td>
-                    </tr>
+        <h2>Un formulaire - <i class="fas fa-sign-in-alt"></i></h2>
 
-                    <tr>
-                        <td>200e</td>
-                        <td>180e</td>
-                        <td>170e🤦‍♂</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="formulaire">
+
+                       
+            <!-- action : url de destination (adresse ou fichier) peut-être vide -->
+            <!-- method maniére de faire circuler les données (POST ou GET) (envoyer ou récupérer) -->
+            <!-- enctype : pour envoyer le fichier correctement, il faut un <input> de type file -->
+            <form action="inscription.php" method="POST" enctype="multipart/form-data">
+
+            
+        <label for="Pseudo">Pseudo*</label>
+        <input type="text" id="Pseudo" name="Pseudo"placeholder="Votre pseudo" required>
+        <br>
+        <label for="Prenom">Prénom</label>
+        <input type="text" id="name" name="name" placeholder="Votre Prénom" required>
+        <br>
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" placeholder="Votre mot de passe"required>
+        <br>
+        <label for="email">Mail</label>
+        <input type="text" id="name" name="name" placeholder="Votre Mail" required>
+        
+        <!-- minlength="4" maxlength="12" size="10" -->
+
+        <p>Quel sont vos fruits préféres</p>
+
+        <label for="">orange</label>
+        <input type="checkbox" name="fruits[]" id="orange" value="orange">
+
+        <label for="">fraise</label>
+        <input type="checkbox" id="fraise" name="fruits[]" value="orange">
+
+        <label for="">kiwi</label>
+        <input type="checkbox" id="kiwi" name="fruits[]" value="kiwi">
+
+        <label for="">fraise</label>
+        <input type="checkbox" id="fraise" name="fruits[]" value="cerise"> 
+
+        <p>Sauvez un legume</p>
+
+        <select name="legumes" id="legumes">
+            <option value="poireau"></option>
+            <option value="choux de bruxelles"></option>
+            <option value="celeri"></option>
+            <option value="épinard" selected="Epinards">Epinards</option>
+        </select><br>
+        
+        </form>
+
         </section>
-        <div class="clear"></div>
+        
     </main>
 
     <footer>

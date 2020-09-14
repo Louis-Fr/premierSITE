@@ -682,6 +682,31 @@ img[src="img/toureiffel.jpg"] {
 
 /* flexbox */
 
+.flex {
+	display: flex;	
+	/* les div également réparties horizontalement */
+	/* justify-content space between */
+
+	/* espace égal autour de chaque div */
+	/* justify-content: space-around; */
+
+	/* de haut en bas en mode colonne */
+	/* en mode colonne les div sont inversés */
+
+	/* flex-direction: column-reverse; */
+	flex-direction: row-reverse;
+}
+
+.flex div {
+	width: 100%;
+	height: 150px;
+	background: #984A59;
+	text-align: center;
+	font-weight: 50px;
+	color: #fff;
+	margin: 10px;
+}
+
 /* page des liens */
 
 .ancre {
@@ -924,3 +949,10 @@ iframe [allowfullscreen] {
 .audio {
 	text-align: center;
 }
+
+#google {
+	width: 100%;	
+}
+
+
+
