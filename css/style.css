@@ -950,9 +950,63 @@ iframe [allowfullscreen] {
 	text-align: center;
 }
 
+/* la page du formulaire */
+
+form {
+	width: 80%;	
+	margin: 0 auto;
+	padding: 15px;
+	background: #2d5c7f;
+	color: #d0e3fa;
+	border-radius: 20px;
+}
+
+form p {
+	margin: 10px;
+}
+
 #google {
 	width: 100%;	
 }
 
+textarea {
+	/* on interdit le redimensionnement du textarea */
+	resize: none;
+}
 
+label[for="orange"], label[for="fraise"], label[for="kiwi"], label[for="cerise"] {
+	background-color: orange;
+}
 
+/* la page du tableau */
+
+.tableau td {
+	border: 2px solid #205D67;
+	padding: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.tableau table {
+	border-collapse: collapse;
+}
+
+.tableau caption {
+	background: #d0e3fa;
+	border: 1px solid #6495ed;
+	height: 50px;
+	font-size: 25px;
+	text-align: left;
+	padding-left: 5px;
+	color: #6495ed;
+} 
+
+.tableau thead, .tableau tfoot {
+	background: #d0e3fa;
+	border: 5px solid #6495ed;
+	text-align: center;
+}
+
+.tableau thead td, .tableau tfoot td {
+	text-align: center;
+}

@@ -9,7 +9,7 @@
     <!-- feuille de style du premier site -->
     <title>premierSITE - Tableau</title>
     <!-- les icônes depuis FontAwesome -->
-    <script src="https://kit.fontawesome.com/d0f933ad89.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/d0f933ad89.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="../premierSITE/css/style.css">
 </head>
 <body>
@@ -61,11 +61,71 @@
     </nav>
 
     <!-- contenu principal -->
-    <main>  
-        <section>
-            <h2>Un tableau - <i class="fas fa-table"></i></h2>
+    <main> 
+        
+        <section class="tableau">
             <table>
+            <thead>
+            <tr>
+                <td>Dates</td>
+                <td>15/09/2020</td>
+                <td>15/09/2020</td>
+                <td>15/09/2020</td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Dates</td>
+                <td>15/09/2020</td>
+                <td>15/09/2020</td>
+                <td>15/09/2020</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td rowspan="2">AirFrance</td>
+                <td>22h - Arrivée à 12h</td>
+                <td>23h - Arrivée à 22h</td>
+                <td>14h - Arrivée à 18h</td>
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <td>200e</td>
+                <td>320e</td>
+                <td>415e</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Alitalia</td>
+                <td>Départ 6h - Arrivé 8h30</td>
+                <td>Départ 13h - Arrivé 15h</td>
+                <td>Départ 21h - Arrivé 23h</td>
+            </tr>
+            <tr>
+                <!-- com -->
+                <td>150e</td>
+                <td>160e</td>
+                <td>170e</td>
+            </tr>
+
+        </tbody>
+            </table>
+
+        </section>
+
+
+
+
+
+
+
+        
+        <!-- <section>
+            <h2>Un tableau - <i class="fas fa-table"></i></h2>
+
+            <table>
+
                 <caption>Vol Paris /// Rome -></caption>
+
                 <thead>
                     <tr>
                         <td>Dates</td>
@@ -90,9 +150,11 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </section> -->
         <div class="clear"></div>
     </main>
+
+    /* tr rangée à l'horizontal */
 
     <footer>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quidem labore voluptates quibusdam dicta iste natus esse facilis eligendi expedita fugit laboriosam sequi rem quis, ipsum cum quaerat obcaecati facere!

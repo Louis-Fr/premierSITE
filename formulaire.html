@@ -9,7 +9,7 @@
     <!-- feuille de style du premier site -->
     <title>premierSITE - Formulaire</title>
     <!-- les icônes depuis FontAwesome -->
-    <script src="https://kit.fontawesome.com/d0f933ad89.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/d0f933ad89.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="../premierSITE/css/style.css">
 </head>
 <body>
@@ -74,14 +74,14 @@
             <form action="inscription.php" method="POST" enctype="multipart/form-data">
 
             
-        <label for="Pseudo">Pseudo*</label>
-        <input type="text" id="Pseudo" name="Pseudo"placeholder="Votre pseudo" required>
+        <label for="Pseudo">Pseudo</label>
+        <input type="text" id="Pseudo" name="Pseudo" placeholder="Votre pseudo" required>
         <br>
         <label for="Prenom">Prénom</label>
         <input type="text" id="name" name="name" placeholder="Votre Prénom" required>
         <br>
         <label for="password">Mot de passe</label>
-        <input type="password" id="password" name="password" placeholder="Votre mot de passe"required>
+        <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
         <br>
         <label for="email">Mail</label>
         <input type="text" id="name" name="name" placeholder="Votre Mail" required>
@@ -90,27 +90,35 @@
 
         <p>Quel sont vos fruits préféres</p>
 
-        <label for="">orange</label>
+        <label for="orange">orange</label>
         <input type="checkbox" name="fruits[]" id="orange" value="orange">
 
-        <label for="">fraise</label>
+        <label for="fraise">fraise</label>
         <input type="checkbox" id="fraise" name="fruits[]" value="orange">
 
-        <label for="">kiwi</label>
+        <label for="kiwi">kiwi</label>
         <input type="checkbox" id="kiwi" name="fruits[]" value="kiwi">
-
-        <label for="">fraise</label>
+                        
+        <label for="cerise">cerise</label>
         <input type="checkbox" id="fraise" name="fruits[]" value="cerise"> 
+                <!--  -->
 
         <p>Sauvez un legume</p>
 
         <select name="legumes" id="legumes">
-            <option value="poireau"></option>
-            <option value="choux de bruxelles"></option>
-            <option value="celeri"></option>
+            <option value="poireau">poireau</option>
+            <option value="choux de bruxelles">choux de bruxelles</option>
+            <option value="celeri">Celeri</option>
             <option value="épinard" selected="Epinards">Epinards</option>
-        </select><br>
-        
+        </select>   
+        <br>
+
+        <label for="message">Votre commentaire</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="dites nous ce que vous en pensez"></textarea>
+        <br>
+        <input type="submit" name="envoyer" value="Envoyer">
+        <input type="reset" name="annuler" value="annuler">
+
         </form>
 
         </section>
