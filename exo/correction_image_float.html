@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images en float</title>
+    <style>
+        main {
+            background-color: rgba(43, 204, 245, 0.349);
+            margin: auto;
+            width: 800px;
+            min-height: fit-content;
+        }
+        .a-droite {
+            float:right;
+            width:60px;
+            height:60px;
+        }
+        .a-gauche {
+            float:left;
+            width:60px;
+            height:60px;
+        }
+        .clear {
+            clear: both;
+        }
+        @media (max-width: 600px) {
+            main {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Images en float</h2>
+        <p><strong>Faire flotter l'image à droite :</strong></p>
+        <p>
+        <img src="../img/star.png" alt="étoile" class="a-droite">
+        Un paragraphe avec une image qui flotte à droite. 
+        Un paragraphe avec une image qui flotte à droite. 
+        Un paragraphe avec une image qui flotte à droite. 
+        Un paragraphe avec une image qui flotte à droite. 
+        </p>
+        <p><strong>Faire flotter l'image à gauche :</strong></p>
+        <p>
+        <img src="../img/star.png" alt="étoile" class="a-gauche">
+        Un paragraphe avec une image qui flotte à gauche.
+        Un paragraphe avec une image qui flotte à gauche. 
+        Un paragraphe avec une image qui flotte à gauche. 
+        Un paragraphe avec une image qui flotte à gauche.  
+        </p>
+        <div class="clear"></div>
+    </main>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image float</title>
+    <style>
+
+        body {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        #wrapper {
+            background-color: #222;
+            margin: auto;
+            width: 900px;
+        }
+        section {
+            background-color: lightblue;
+            padding: 0;
+            height: 500px;
+        }
+        .image1 {
+            float: right;
+            
+        }
+
+        /* <!-- correction  --> */
+
+        div #audrey {
+            background-color: rgb(109, green208, blue)
+            min-height: 
+        }
+
+        #audrey main {
+            background-color: lightblue;
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        #audrey img {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #audrey p {
+            float: left;
+            width: 90%;
+        }
+
+        #audrey h1, #audrey section, #audrey p {
+            padding: 5px;
+        }
+
+        div #correction2 {
+            background-color: #5698;
+            margin: 0 auto;
+            width: 800px;
+        }
+
+        .a-droite {
+            float: right;
+            width: 50px;
+            height: 50px;
+        }
+
+        .a-gauche {
+            float: left;
+            width: 50px;
+            height: 50px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        @media (max-width: 600px) {
+            #wrapper {
+                width: 100%;
+                background: red;
+                }
+            }
+    </style>
+</head>
+
+<body>
+<div id="wrapper">
+        <section>
+            <h1>Images en float</h1>
+            <div>
+                <h3>Faire flotter l'image à droite :</h3>
+                <img src="../img/star.png" alt="étoile" class="image1">
+                           
+                <p>Un paragraphe avec une image qui flotte à droite. Un paragraphe avec une image qui flotte à droite. n paragraphe avec une image qui flotte à droite.</p>
+                
+            </div>
+    
+           <div>
+               <h2>Faire flotter l'image à gauche. Faire flotter l'image à gauche. Faire flotter l'image à gauche. Faire flotter l'image à gauche</h2>
+                <p>Un paragraphe avec une image qui flotte à gauche. Un paragraphe avec une image qui flotte à gauche. Un paragraphe avec une image qui flotte à gauche.</p>
+                <img src="../img/star.png" alt="étoile" class="image2">
+           </div>
+        </section>
+    
+                              <!-- correction  -->
+        <main>
+            <h1>Image en float</h1>
+            <section>
+                <h2>Faire flotter l'image à gauche</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum temporibus sunt natus et perspiciatis aspernatur a necessitatibus animi possimus doloribus repellat minima, recusandae unde tempore debitis dignissimos. Architecto, sed autem!</p>
+                <img src="../img/star.png" alt="étoile">
+            </section>
+            <section>
+                <h2>Faire flotter l'image à gauche</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum temporibus sunt natus et perspiciatis aspernatur a necessitatibus animi possimus doloribus repellat minima, recusandae unde tempore debitis dignissimos. Architecto, sed autem!</p>
+                <img src="../img/star.png" alt="étoile">
+            </section>
+        </main>
+    
+        <div id="correction2">
+            <h2>Images en float</h2>
+    
+            <p>1/ Faire flotter l'image à droite :</p>
+                <p>
+                <img src="../img/star.png" alt=" une étoile">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure reprehenderit aliquam dignissimos quod, illo enim eius odit repellat. Possimus quia obcaecati hic sit rem voluptatem sunt ipsam magnam cumque?
+                </p>
+    
+            <p>Faire flotter l'image à gauche :</p>
+    
+            <p>
+                <img src="../img/star.png" alt="étoile">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fuga et nostrum recusandae, vero modi laboriosam tenetur doloremque pariatur ad. Eveniet dolor sint voluptas similique temporibus deleniti tempora, illo quidem!
+            </p>
+        </div>
+        <div class="clear"></div>
+    </div>  
+</body>
+</html>
