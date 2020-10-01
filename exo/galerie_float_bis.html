@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Float Bis</title>
+    <style>
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+#container {
+    background: rgb(152, 189, 238);
+    width: 1200px;
+    margin: 10px auto;
+}
+
+header {
+    height: 150px;
+    background-color: rgba(63, 52, 80, alpha);
+}
+
+nav {
+    height: 100px;
+    background: rgb(191, 191, 219);
+}
+
+section {
+    height: auto;
+    background: pink;   
+}
+
+.image {
+    float: left;
+    padding: 30px 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.bloc {
+    margin-left: 20%;
+}
+
+footer {
+    height: 80px;
+}
+
+/* pour les légendes  */
+
+figure {
+    display: flex;
+    /* flex-flow: propriété raccourcis pour flex direction et flex wrap */
+    flex-flow: column;
+}
+
+figcaption {
+    background-color: rgba(34, 34, 34, 0.5);
+    color: #fff;
+    font: italic smaller sans-serif;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+    <!--HEADER-->
+    <header>HEADER</header>
+    <!--NAV-->
+    <nav>NAV</nav>
+    <!--SECTION-->
+    <section class="section">
+        <h2 class="titreSection">De bien beaux voiliers</h2>
+        <!-- Bloc d'image-->
+        <div class="bloc">
+            <div class="image">
+                <figure>
+                    <img src="../img/voiliergonet.jpg" alt="Image voilier">
+                    <figcaption>Légende</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                <figure>
+                    <img src="../img/voilierimage.jpg" alt="Image voilier">
+                    <figcaption>Légende</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                <figure>
+                    <img src="../img/voilierplaque.jpg" alt="Image voilier">
+                    <figcaption>Légende</figcaption>
+                </figure>
+            </div>
+            <div class="image">
+                <figure>
+                    <img src="../img/voiliertrinite.jpg" alt="Image voilier">
+                    <figcaption>Légende</figcaption>
+                </figure>
+            </div>
+        </div>
+        <!--Retour dans le flux -->
+        <div class="clear"></div>
+    </section>
+    <!--FOOTER-->
+    <footer>FOOTER</footer>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+

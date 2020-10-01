@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <style>
+        header {
+            background: #b0c4de;
+            /* width: 1200px; */
+            height: 150px;
+        }
+
+        nav {
+            background: mediumorchid;
+            height: 100px;
+            padding-top: 10px;
+        }
+
+        
+        footer {
+            background-color:  #b0c4de;
+            padding-top: 10px;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+
+        .p {
+            background: pink;
+            padding-top: 10px;
+
+        }
+
+        .pieddepage {
+            height: 80px;
+            text-align: left;
+            margin-bottom: 20px
+            
+        }
+
+        .legende {
+            color: #ffffff;
+            margin: -14px;
+            text-align: center;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>HEADER</p>
+    </header>
+    <nav>
+        <p>NAV</p>
+    </nav>
+    <section class="p">
+        <p>De bien beaux voiliers</p>
+        <div class="flex">
+            <figure>
+            <img src="img/voiliergonet.jpg" alt="voiliergonet">
+            <figcaption class="legende">Voilier Gonet</figcaption>
+            </figure>
+
+            <figure>
+            <img src="img/voilierimage.jpg" alt="voilierimage">
+            <figcaption class="legende">Voilier Image</figcaption>
+            </figure>
+
+            <figure>
+            <img src="img/voilierplaque.jpg" alt="voilierplaque">
+            <figcaption class="legende">Voilier plaque</figcaption>
+            </figure>
+
+            <figure>
+            <img src="img/voiliertrinite.jpg" alt="voiliertrinite">
+            <figcaption class="legende">Voilier Trinite</figcaption>
+            </figure>
+        </div>
+    </section>
+    <footer class="pieddepage">
+        <p>FOOTER</p>
+    </footer>
+    </div>
+</body>
+</html>

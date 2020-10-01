@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <style>
+                html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .clear {
+            clear: both;
+        } 
+
+        * {
+         box-sizing: border-box;
+        }
+
+        /* fin du reset */
+
+        body {
+            font-family: sans-serif;
+        }
+
+        #wrapper {
+            background-color: pink;
+            width: 1230px;
+            margin: 10px auto;
+        }
+
+        p {
+            padding: 5px;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        header {
+            height: 150px;
+            background-color: grey;
+        }
+
+        section {
+            height: 245px;
+            margin: auto;
+            background: #ebcdd2;
+        }
+
+        footer {
+            height: 80px;
+            text-transform: uppercase;
+        }
+
+        /* style des balises secondaire et des classes */
+
+        .centrer {
+            width: 700px;
+            margin: auto;
+        }
+
+        figure {
+            float: left;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        figcaption {
+            background-color: #000;
+            position: relative;
+            color: #ffffff;
+            bottom: 20px;
+        }
+
+        </style>
+
+          <!-- début de wrapper  -->
+    <div id="wrapper">
+        <header><!-- header  -->
+            <p>header</p>
+        </header><!-- fin de header -->
+        <nav><!-- une nav -->
+            <p>nav</p>
+        </nav><!-- fin de nav -->
+        <section><!-- section -->
+            <p>De bien beaux voiliers</p>
+            <div class="centrer"><!-- .centrer : va permettre de centrer les images et de faire le css  -->
+                <figure><!-- img 1 -->
+                    <img src="img/voiliergonet.jpg" alt="PremierSITE : une image de voilier">
+                    <figcaption>légende</figcaption>
+                </figure>
+                <figure><!-- img 2 -->
+                    <img src="img/voilierimage.jpg" alt="PremierSITE : une image de voilier">
+                    <figcaption>légende</figcaption>
+                </figure>
+                <figure><!-- img 3 -->
+                    <img src="img/voilierplaque.jpg" alt="PremierSITE : une image de voilier">
+                    <figcaption>légende</figcaption>
+                </figure>
+                <figure><!-- img 4 -->
+                    <img src="img/voiliertrinite.jpg" alt="PremierSITE : une image de voilier">
+                    <figcaption>légende</figcaption>
+                </figure>
+            </div><!-- fin de la div .centrer -->
+            <div class="clear"></div><!-- fin du float left -->
+        </section> <!-- fin de la section  -->
+        <footer><!-- footer -->
+            <p>footer</p>
+        </footer><!-- fin du footer -->
+    </div><!-- fin de la fiv #wrapper  -->
+
+
+
+
+

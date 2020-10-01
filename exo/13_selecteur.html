@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélecteurs CSS</title>
+    <style>
+        /* 1er sélecteur - l'astérisque cible tous les éléments de la page.
+        On peut également cibler tous les sélecteurs enfants d'un élément
+        ex : (à utiliser le moins possible) */
+        
+       * {
+            box-sizing: border-box;
+        }
+        
+        /* le sélecteur de classe que l'on utilise plusieurs fois dans la même page */
+         
+
+         /* #container * {
+            border : px solid black;
+        } */
+        
+
+        /* 2 - Le symbole dièse pour cibler un élément pas son id */
+
+        #container {
+            width: 900px;
+            margin: auto;
+            background-color: grey;
+        }
+
+        /* 3 - Le sélecteur de classe que l'on utilise plusieurs fois dans la même page */
+
+        .error {
+            background-color: red;
+            color: white;
+        }
+
+        /* 4- Les sélecteur descendant pour cibler les a dans les li et uniquement ceux-là */
+
+        li a {
+            text-decoration: none;
+        }
+        /* 5- Le sélecteur de type pour cibler tous les élements d'une page */
+
+        ul {
+            background-color: lightblue;
+            /* width: 500px; */
+        }
+
+        /* 6- Les psdeudos-classe ex :link tous les liens par encore cliqués  */
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        /* 7- Le sélecteur adjacent : il ne sélectionne que l'élément qui est précéde par le premier élement ciblé, ici le p précédé d'une ul */
+
+        ul + p {
+            background-color: #fff;
+        }
+
+        /* 8- Le sécleteur d'enfant direct */
+
+        div#listing > ul {
+            border: 5px solid red;
+            background-color: olive;
+        }
+
+        /* 9- Ce combinateur frère est proche de x + y mais moins strict, en effet il cible tous les p qui sont précédés d'un h3 */
+
+        h3 ~ p {
+            color: navy;
+            text-transform: uppercase;
+        }
+
+        /* 10- Le sélecteur d'attributs */
+
+        a [title] {
+            background-color: black;
+            color: white;
+        }
+
+        /* 11- toutes les balises a qui contiennnent un lien vers https://www.lemonde.fr/ */
+
+        a[href="https://www.leparisien.fr/"]  {
+            background-color: wheat;
+        }
+
+        /* 12- la valeur qui suit l'étoile doit apparaitre quelque part dans la valeur de l'attribut */
+        a[href*="mac"], a[href*="mon"] {
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Les sélecteurs CSS à connaître...</h1>
+        <p>Il y a une <span class="error">erreurre</span>dans cette phrase</p>
+        <p>Et dans celle-là <span class="error">aussie</span></p>
+        <hr>
+        <ul>
+            <li><a href="#">Rubrique 1</a></li>
+            <li><a href="#">Rubrique 2</a></li>
+            <li><a href="#" title="la rubrique 3">Rubrique 3</a></li>
+            <li><a href="#">Rubrique 4</a></li>
+        </ul>
+        <p>Un lien vers le site de mon choix <a target="_blank" href="https://macbidouille.com/" title="Macbidouille">cliquez-ici</a></p>
+        <p><a href="https://www.leparisien.fr/">Le parisien</a></p>
+        <ul>
+            <li>Pain</li>
+            <li>Vin</li>
+            <li>Boursin</li>    
+        </ul>
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illum accusantium nobis blanditiis, sit reprehenderit est repellendus! Esse nobis praesentium, enim, assumenda officia laudantium dicta tenetur aliquam doloremque nesciunt dolor.</p>
+        <hr>
+
+        <h3>Coucou</h3>
+        <div id="listing">
+            <ul>
+                <li>Europe</li>
+                    <ul>
+                        <li>France</li>
+                        <li>Algérie</li>
+                    </ul>
+                <li>Asie</li>
+                <li>Afrique</li>
+                <li>Amérique</li>
+                <li>Asutralie</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
