@@ -91,12 +91,150 @@
             background-color: wheat;
         }
 
-        /* 12- la valeur qui suit l'étoile doit apparaitre quelque part dans la valeur de l'attribut */
+        /* 12- la valeur qui suit l'étoile doit apparaitre quelque part dans la valeur de l'attribut, on recherche une chaîne de caractères */
         a[href*="mac"], a[href*="mon"] {
             background-color: black;
             color: white;
             text-transform: uppercase;
         }
+        
+        /* 13-  */
+        /* 14- */
+        /* 15- */
+        /* 16- */
+        /* 17- Une pseudo-classe pour cibler un élement d'interface utilisateur */
+
+        input[type="radio"]:checked +label {
+            border: 2px solid red;
+        }
+
+        /* 18- */
+
+        /* 19- pseudo-classe d'action utilisateur: :hover */
+
+        a:hover {
+            border-bottom: 2px solid green;
+            /* text-decoration: underline; */
+        }
+
+        /* 20- La pseudo class de négation : toute les div sauf #container */
+
+        div:not(#container) {
+            color: yellow;
+        }
+
+        /* 21 pseudo-éléments identifiés par "::" ; */
+        p::first-letter {
+            font-weight: bold;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+        }
+
+        p#lettrine::first-letter {
+            font-size: 2em;
+            padding-right: 5px;
+            float: left;
+        }
+
+        /* 22- la pseudo-classe ELEMENT:nth-child(n)*/
+
+        #courses li:nth-child(2) {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* 23 pour selectionner l'avant dernier par exemple, ou pour selectionner à partir du dernier  */
+
+        #departements li:nth-last-child(2) {
+            background-color: #fff;
+        }
+        
+        /* 26  */
+
+        ul#departements li {
+            border-top: 1px solid purple;
+            border-bottom: 1px solid purple;
+            padding: 2px;
+        }
+
+        ul#departements li:first-child {
+            border-top: none;
+        }
+
+       
+        
+
+        /* 27- ELEMENT:Last-child */ 
+        
+        ul#departements li:last-child {
+            border-bottom: none;
+        }
+
+        ul#courses li:last-child {
+            font-family: cursive;
+        }
+
+        ul#mini-menu {
+            width: 200px;
+            background-color: rgb(131, 131, 131);
+            color: #fff;
+            list-style: none;
+            padding-left: 0px;
+            margin: auto;
+        }
+
+        ul#mini-menu li {
+            padding: 20px;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #858585;
+            list-style: url("../img/star2.png");
+        }
+
+        ul#mini-menu li:first-child {
+            border-top: none;
+        }
+
+        ul#mini-menu li:last-child {
+            border-bottom: none;
+        }
+        
+        ul>li:last-child {
+            /* font-family = typo */
+            font-family: Arial, Helvetica, sans-serif;
+            color: aqua;
+        }
+
+        #courses li:first-child {
+            color: chartreuse;
+        }
+        
+        /* 28- only child */
+
+        article p:only-child {
+            color: orangered;
+        }
+
+        /* 29- Element:firstoftype */
+
+        article ul:first-of-type > li:nth-child(2) {
+            font-weight: bold;
+        }
+
+        p + ul li:last-child {
+            color: red;
+        }
+
+        article ul:first-of-type li:nth-child(1) {
+            font-size: 20px;
+        }
+
+        ol li {
+            list-style: upper-roman;
+        }
+        
+        /* alt+maj+a pour commenter une partie d'une ligne */
 
     </style>
 </head>
@@ -114,7 +252,8 @@
         </ul>
         <p>Un lien vers le site de mon choix <a target="_blank" href="https://macbidouille.com/" title="Macbidouille">cliquez-ici</a></p>
         <p><a href="https://www.leparisien.fr/">Le parisien</a></p>
-        <ul>
+
+        <ul id="courses">
             <li>Pain</li>
             <li>Vin</li>
             <li>Boursin</li>    
@@ -127,16 +266,98 @@
         <div id="listing">
             <ul>
                 <li>Europe</li>
-                    <ul>
+                    <ol>
                         <li>France</li>
                         <li>Algérie</li>
-                    </ul>
+                    </ol>
                 <li>Asie</li>
                 <li>Afrique</li>
                 <li>Amérique</li>
                 <li>Asutralie</li>
             </ul>
         </div>
+        <!-- fin du conteneur -->
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime amet optio voluptas illo eveniet debitis excepturi ipsa nihil vero voluptate soluta possimus ex, cupiditate sed consequatur fugit unde quidem.</p>
+        <hr>
+        <form action="#" method="POST">
+            <input type="radio" name="rad" value="bouton radio">
+            <label for="rad">Bouton radio</label>
+        </form>
+     
+        <p id="lettrine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nisi voluptates quibusdam doloribus rerum odit tempora recusandae ex veritatis dolorem soluta assumenda libero facilis ipsum, molestiae, debitis consequuntur deserunt eius.
+        </p>
+
+        <h2>La liste des départements français</h2>
+        <ul id="departements">
+            <li>01 - Ain - Bourg-en-bresse</li>
+            <li>02 - Aisne - Laon</li>
+            <li> 03 - Allier - Moulins</li>
+            <li>04 - Alpes-de-Haute-Provence - Digne-les-bains</li>
+            <li>05 - Hautes-alpes - Gap</li>
+            <li>06 - Alpes-maritimes - Nice</li>
+            <li>07 - Ardèche - Privas</li>
+            <li>08 - Ardennes - Charleville-mézières</li>
+            <li>09 - Ariège - Foix</li>
+            <li>10 - Aube - Troyes</li>
+        </ul>
+
+        <hr>
+        <h2>un mini menu</h2>
+
+        <ul id="mini-menu">
+            <li>Liste item 1</li>
+            <li>Liste item 2</li>
+            <li>Liste item 3</li>
+        </ul>
+        <hr>
+        <h2>Des paragraphes</h2>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam esse delectus dolorem iste culpa laudantium asperiores dolorum beatae voluptatem facilis corporis dicta corrupti unde eligendi saepe impedit, aliquam mollitia sequi?</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto veniam tempora quis sit officia dolor ad exercitationem illum? Provident magni accusantium cupiditate veniam nihil sed repellat! Doloribus, nisi! Ad, veritatis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quasi deserunt numquam praesentium quisquam recusandae placeat molestiae ipsum dolore laudantium, quibusdam possimus in quod aperiam incidunt sint labore minus? Provident?</p>
+        </article>
+        <hr>
+        <h2>suite...</h2>
+        <p>Mon paragraphe ici</p>
+        <article>
+        <ul>
+            <li>Element de liste 1</li>
+            <li>Element de liste 2</li>
+        </ul>
+        </article>   
+
+        <article>
+            <li>Element de liste 3</li>
+            <li>Element de liste 4</li>
+        </article>
+        <hr>
+
+        <!-- ol>li*10{coucou $} -->
+        <ol>
+        <li>coucou 1
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ol>
+        </li>
+        <li>coucou 2</li>
+        <li>coucou 3</li>
+        <li>coucou 4</li>
+        <li>coucou 5</li>
+        <li>coucou 6</li>
+        <li>coucou 7</li>
+        <li>coucou 8</li>
+        <li>coucou 9</li>
+        <li>coucou 10</li>
+        </ol>
+               
+        <!-- fin de container -->
     </div>
 </body>
 </html>
